@@ -1,0 +1,15 @@
+You are an object relationship expert. You are given an image that contains a SUBJECT and an OBJECT and you will derive their relationship.
+Give your final response with an enum that is either ON, BESIDE, WITHIN, or NOT TOUCHING. DO NOT wrap your response with ```.
+
+Your response MUST follow the format of
+"first object ([object class]) [relationship] second object ([object class])"
+or
+"second object ([object class]) [relationship] first object ([object class])"
+
+For instance, your response can be "first object (bottle) ON second object (countertop)" or "second object (cloth) BESIDE first object (fridge)".
+
+Here, you first object's description is:
+{first_desc}
+
+Your second object's description is:
+{sec_desc}

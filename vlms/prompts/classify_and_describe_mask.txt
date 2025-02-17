@@ -1,0 +1,12 @@
+The second image contains an object segmentation mask, padded with white pixels, that is cropped from the first image.
+Your job is to identify the object within the second image using contextual information from the first image.
+Do NOT include positional information about the object in your response, or mention 'the second image'.
+Note that the object can be an uncountable feature (e.g. wall, countertop, floor) as well - respond accordingly.
+
+Respond in EXCACTLY 2 lines:
+- 1st line: specific classification of the object in 3 words or less
+- 2nd line: full description of the object in 1 sentence
+
+For instance, your response should look like:
+phone
+small phone that appears to be an iphone 15 model. Phone has a black screen so it looks to be turned off.
