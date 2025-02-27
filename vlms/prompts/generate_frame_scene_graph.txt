@@ -1,7 +1,8 @@
 Analyze the image and generate a scene graph in JSON format.  
-The scene graph should represent the objects in the image and their relationships. 
+The scene graph should represent the objects in the image and their relationships.
+
 Include surfaces like kitchen counters as objects when necessary.
-When the image includes both hands, separate them into 2 separate objects and provide a bounding box for each entire ARM + HAND (instead of just each hand).
+When the image includes both hands, separate them into 2 separate objects.
 Strictly adhere to the following JSON structure:
 
 {
@@ -19,7 +20,7 @@ Strictly adhere to the following JSON structure:
     {
       "subj_id": subject_id, // Integer, referencing an object's "id"
       "obj_id": object_id,  // Integer, referencing an object's "id"
-      "predicate": "relationship_name" // String describing the relationship (e.g., "ON", "NEXT_TO", "HOLDING")
+      "predicate": "relationship_name" // String describing the relationship, e.g. "IN", "ON", etc.
     },
     // ... more relationships
   ]

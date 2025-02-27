@@ -30,7 +30,6 @@ def draw_vlm_bbox(frame_sg, image_path, vis_path, resized_dims):
     plt.axis('off')
     plt.savefig(vis_path, dpi='figure')
 
-
 def draw_rels_in_frame(objs, rels, image_path, frame_idx, vis_path):
     image = Image.open(image_path)
     fig, ax = plt.subplots(figsize=(20, 20))
@@ -44,9 +43,9 @@ def draw_rels_in_frame(objs, rels, image_path, frame_idx, vis_path):
         mx = (bbox[0]+bbox[2])/2
         my = (bbox[1]+bbox[3])/2
 
-        ax.add_patch(Rectangle(bbox[0:2], bbox[2]-bbox[0], bbox[3]-bbox[1], edgecolor=color, facecolor='none'))
+        ax.add_patch(Rectangle(bbox[0:2], bbox[2]-bbox[0], bbox[3]-bbox[1], edgecolor=color, facecolor='none', linewidth=3))
         text = ax.text(mx, my, f"{obj.name} ({id})", color='black', fontsize=12)
-        text.set_bbox(dict(facecolor='white', alpha=0.5, linewidth=0))
+        text.set_bbox(dict(facecolor=color, alpha=0.5, linewidth=0))
     for obj_pair, rel in rels.items():
         id_1, id_2 = obj_pair.split(',')
 
@@ -58,7 +57,7 @@ def draw_rels_in_frame(objs, rels, image_path, frame_idx, vis_path):
         mx2 = (bbox2[0]+bbox2[2])/2
         my2 = (bbox2[1]+bbox2[3])/2
 
-        ax.arrow(mx1, my1, mx2-mx1, my2-my1, width=3, head_width=15, head_length=10, facecolor=color, edgecolor=color)
+        ax.arrow(mx1, my1, mx2-mx1, my2-my1, width=3, head_width=25, head_length=15, facecolor=color, edgecolor=color)
         text = ax.text((mx1+mx2)/2, (my1+my2)/2, rel, color='black', fontsize=12)
         text.set_bbox(dict(facecolor='white', alpha=0.5, linewidth=0))
     plt.axis('off')

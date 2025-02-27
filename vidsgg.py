@@ -106,11 +106,9 @@ def main(input_dir, skip_frames):
     # if not os.path.exists(out_dir):
     #     os.makedirs(out_dir)
     
-
     print("--- %s seconds ---" % (time.time() - start_time))
 
-
 if __name__=="__main__":
-    input_dir = 'input/epic_pick_up_cereal_100_frames'
-    skip_frames = 25
+    input_dir = 'input/epic_throw_carton_220_frames'
+    skip_frames = 22
     main(input_dir, skip_frames)
