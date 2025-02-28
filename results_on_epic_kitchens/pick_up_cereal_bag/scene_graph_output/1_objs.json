@@ -1,0 +1,65 @@
+[
+    {
+        "id": 59,
+        "name": "table",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 25,
+        "name": "laptop",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 0,
+        "name": "glass",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 3,
+        "name": "box",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 43,
+        "name": "bottle",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 71,
+        "name": "counter",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 8,
+        "name": "chair",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 55,
+        "name": "chair",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 109,
+        "name": "bowl",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    }
+]

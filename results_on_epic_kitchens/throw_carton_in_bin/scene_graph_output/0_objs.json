@@ -1,0 +1,58 @@
+[
+    {
+        "id": 12,
+        "name": "drying rack",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 3,
+        "name": "colander",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 172,
+        "name": "kitchen counter",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 162,
+        "name": "sink",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 171,
+        "name": "faucet",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 144,
+        "name": "hand",
+        "is_hand": true,
+        "is_moving": true,
+        "is_moved": true
+    },
+    {
+        "id": 51,
+        "name": "hand",
+        "is_hand": true,
+        "is_moving": true,
+        "is_moved": true
+    },
+    {
+        "id": 160,
+        "name": "milk carton",
+        "is_hand": false,
+        "is_moving": true,
+        "is_moved": true
+    }
+]

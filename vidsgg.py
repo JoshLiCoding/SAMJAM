@@ -109,6 +109,6 @@ def main(input_dir, skip_frames):
     print("--- %s seconds ---" % (time.time() - start_time))
 
 if __name__=="__main__":
-    input_dir = 'input/epic_throw_carton_220_frames'
+    input_dir = 'input/epic_cut_bell_pepper_220_frames'
     skip_frames = 22
     main(input_dir, skip_frames)

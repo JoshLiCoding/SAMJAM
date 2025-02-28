@@ -1,0 +1,79 @@
+[
+    {
+        "id": 59,
+        "name": "table",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 25,
+        "name": "tablet",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 0,
+        "name": "container",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 3,
+        "name": "box",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 43,
+        "name": "glasses",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 71,
+        "name": "kitchen counter",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 8,
+        "name": "chair",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 55,
+        "name": "chair",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 109,
+        "name": "cup",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 146,
+        "name": "hand",
+        "is_hand": true,
+        "is_moving": true,
+        "is_moved": true
+    },
+    {
+        "id": 158,
+        "name": "hand",
+        "is_hand": true,
+        "is_moving": true,
+        "is_moved": true
+    }
+]

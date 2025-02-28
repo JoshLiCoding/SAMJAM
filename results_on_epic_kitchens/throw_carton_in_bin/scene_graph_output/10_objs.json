@@ -1,0 +1,226 @@
+[
+    {
+        "id": 12,
+        "name": "drying rack",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 3,
+        "name": "colander",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 172,
+        "name": "sink",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 162,
+        "name": "sink",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 171,
+        "name": "faucet",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 144,
+        "name": "hand",
+        "is_hand": true,
+        "is_moving": false,
+        "is_moved": true
+    },
+    {
+        "id": 51,
+        "name": "hand",
+        "is_hand": true,
+        "is_moving": true,
+        "is_moved": true
+    },
+    {
+        "id": 160,
+        "name": "packages",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": true
+    },
+    {
+        "id": 286,
+        "name": "bag",
+        "is_hand": false,
+        "is_moving": true,
+        "is_moved": true
+    },
+    {
+        "id": 287,
+        "name": "floor",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 251,
+        "name": "kettle",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 281,
+        "name": "hand",
+        "is_hand": false,
+        "is_moving": true,
+        "is_moved": true
+    },
+    {
+        "id": 296,
+        "name": "right hand",
+        "is_hand": true,
+        "is_moving": true,
+        "is_moved": true
+    },
+    {
+        "id": 285,
+        "name": "fruit basket",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 349,
+        "name": "kitchen counter",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 309,
+        "name": "mug",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 342,
+        "name": "drawer",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 320,
+        "name": "disk",
+        "is_hand": false,
+        "is_moving": true,
+        "is_moved": true
+    },
+    {
+        "id": 357,
+        "name": "blue and white bowl",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 462,
+        "name": "tape",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 450,
+        "name": "cabinet",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 421,
+        "name": "hand",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 493,
+        "name": "kitchen counter",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 480,
+        "name": "remote control",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 481,
+        "name": "red bin",
+        "is_hand": false,
+        "is_moving": true,
+        "is_moved": true
+    },
+    {
+        "id": 495,
+        "name": "drawer",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 465,
+        "name": "radiator",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 494,
+        "name": "refrigerator",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 530,
+        "name": "black box",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 546,
+        "name": "leg",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 529,
+        "name": "box",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 575,
+        "name": "foot",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    }
+]

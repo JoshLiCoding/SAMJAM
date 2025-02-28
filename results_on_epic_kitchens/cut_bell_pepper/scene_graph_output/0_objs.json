@@ -1,0 +1,65 @@
+[
+    {
+        "id": 42,
+        "name": "pepper",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 48,
+        "name": "pepper",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 115,
+        "name": "cutting board",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 43,
+        "name": "hand",
+        "is_hand": true,
+        "is_moving": true,
+        "is_moved": true
+    },
+    {
+        "id": 101,
+        "name": "hand",
+        "is_hand": true,
+        "is_moving": true,
+        "is_moved": true
+    },
+    {
+        "id": 136,
+        "name": "pepper",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 57,
+        "name": "knife",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 3,
+        "name": "bottle",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    },
+    {
+        "id": 0,
+        "name": "bottle",
+        "is_hand": false,
+        "is_moving": false,
+        "is_moved": false
+    }
+]
