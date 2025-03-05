@@ -110,20 +110,19 @@ def get_sg_next_frame(frames_dir, vis_dir, cur_objs, frame_sg, total_objs, rels,
     
     propagated_mask_region = np.zeros((resized_dims), np.bool)
     next_objs = {}
-    for out_frame_idx, out_obj_ids, out_mask_logits in predictor.propagate_in_video(inference_state):
-        if out_frame_idx == cur_frame_idx+1:
-            for i, out_obj_id in enumerate(out_obj_ids):
-                out_mask = (out_mask_logits[i] > 0.0).cpu().numpy().reshape(resized_dims)
-                if np.sum(out_mask) == 0:
-                    continue
-                out_bbox = mask_to_bbox(out_mask)
-                propagated_mask_region |= out_mask
-                total_objs[out_obj_id].add_frame_seg(out_frame_idx, out_mask, out_bbox)
+    for out_frame_idx, out_obj_ids, out_mask_logits in predictor.propagate_in_video(inference_state, start_frame_idx=cur_frame_idx+1, max_frame_num_to_track=0):
+        for i, out_obj_id in enumerate(out_obj_ids):
+            out_mask = (out_mask_logits[i] > 0.0).cpu().numpy().reshape(resized_dims)
+            if np.sum(out_mask) == 0:
+                continue
+            out_bbox = mask_to_bbox(out_mask)
+            propagated_mask_region |= out_mask
+            total_objs[out_obj_id].add_frame_seg(out_frame_idx, out_mask, out_bbox)
 
-                obj = Object()
-                obj.name = total_objs[out_obj_id].name
-                obj.add_frame_seg(out_frame_idx, out_mask, out_bbox)
-                next_objs[out_obj_id] = obj
+            obj = Object()
+            obj.name = total_objs[out_obj_id].name
+            obj.add_frame_seg(out_frame_idx, out_mask, out_bbox)
+            next_objs[out_obj_id] = obj
     draw_masks_in_frame(total_objs, cur_frame_idx+1, resized_dims, os.path.join(vis_dir, f'frame_{cur_frame_idx+1}_propagated_masks.jpg'))
     
     next_frame = np.array(Image.open(os.path.join(frames_dir, frame_names[cur_frame_idx+1])))
@@ -138,8 +137,10 @@ def get_sg_next_frame(frames_dir, vis_dir, cur_objs, frame_sg, total_objs, rels,
             obj.add_frame_seg(cur_frame_idx+1, mask['segmentation'], [x1, y1, x1+w, y1+h])
             next_objs[id_ctr] = obj
             id_ctr += 1
+    draw_masks_in_frame(next_objs, cur_frame_idx+1, resized_dims, os.path.join(vis_dir, f'frame_{cur_frame_idx+1}_sampled_masks.jpg'))
     
     matched_objs, next_rels = match_objects(frame_sg, next_objs, cur_frame_idx+1, resized_dims)
+    draw_masks_in_frame(matched_objs, cur_frame_idx+1, resized_dims, os.path.join(vis_dir, f'frame_{cur_frame_idx+1}_matched_masks.jpg'))
     next_objs_matched = {}
     for id, obj in matched_objs.items():
         if id not in total_objs:

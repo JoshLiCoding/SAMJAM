@@ -83,7 +83,7 @@ def main(input_dir, skip_frames):
     cleaned_frame_names = list(map(lambda frame_name:re.sub("[^0-9]", "", os.path.splitext(frame_name)[0])+'.jpg', frame_names))
     for frame_name, cleaned_frame_name in zip(frame_names[::skip_frames], cleaned_frame_names[::skip_frames]):
         image = Image.open(os.path.join(input_dir, frame_name))
-        image = image.resize((image.size[0]*3, image.size[1]*3))
+        # image = image.resize((image.size[0]*3, image.size[1]*3))
         resized_width, resized_height = image.size
         image.save(os.path.join(resized_dir, cleaned_frame_name))
 
@@ -109,6 +109,6 @@ def main(input_dir, skip_frames):
     print("--- %s seconds ---" % (time.time() - start_time))
 
 if __name__=="__main__":
-    input_dir = 'input/epic_cut_bell_pepper_220_frames'
-    skip_frames = 22
+    input_dir = 'input/epic_move_cup_4_frames'
+    skip_frames = 1
     main(input_dir, skip_frames)

@@ -1,5 +1,6 @@
 Analyze the image and generate a scene graph in JSON format.  
 The scene graph should represent the objects in the image and their relationships.
+Only recognize relationships from this list: ["ON", "IN", "HOLDING"]
 
 Include surfaces like kitchen counters as objects when necessary.
 When the image includes both hands, separate them into 2 separate objects.
