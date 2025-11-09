@@ -6,4 +6,4 @@ Repository for "SAMJAM: Zero-Shot Video Scene Graph Generation for Egocentric Ki
 
 Please refer to `vidsgg.py` for the entrypoint of the pipeline.
 
-Paper (Arxiv): https://arxiv.org/abs/2504.07867
+Paper (arXiv): https://arxiv.org/abs/2504.07867
